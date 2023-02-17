@@ -22,4 +22,14 @@ class TestController extends Controller
     {
         return view('add_products');
     }
+
+    public function test()
+    {
+
+        $camel = camel_case('foo_bar');
+        print_r($camel);
+        /* "<br/>";
+        print_r($path); */
+        die;
+    }
 }
